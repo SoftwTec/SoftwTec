@@ -1,0 +1,31 @@
+[
+    {
+        "name":"Micrófono Inalámbrico",
+        "precio":378900,
+        "marca":"Sony"
+    },
+
+    {
+        "name":"Celular tipo Smart",
+        "precio":1387900,
+        "marca":"Xiaomi Poco X4 Pro"
+    },
+        
+    {
+        "name":"Audífonos In-Ear Inalámbricos",
+        "precio":249900,
+        "marca":"JBL Tune"
+    },
+
+    {
+        "name":"Silla Gamer Ergonómica",
+        "precio":474900,
+        "marca":"Ergonom"
+    },
+
+    {
+        "name":"Videoproyector",
+        "precio":2599900,
+        "marca":"Samsung"
+    }
+]
