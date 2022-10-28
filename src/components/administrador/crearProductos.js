@@ -1,5 +1,5 @@
 import React, {useState} from "react";
-import "../crearProductos.css";
+import "./crearProductos.css";
 
 
 function App(){
@@ -20,7 +20,7 @@ function App(){
     return(
         <div className="Mi_Formulario_Contenedor">
             <div className="Mi_Formulario_Header">
-                <h1 className="Mi_Formulario_Título">Formulario de Entrada de Datos</h1>
+                <h1 className="Mi_Formulario_Título">Ingresar productos</h1>
                 </div>
                     <div className="Mi_Formulario_Body">
                         <div className="Mi_Formulario_Form">
