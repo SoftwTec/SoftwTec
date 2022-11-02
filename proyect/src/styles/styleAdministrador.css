@@ -1,0 +1,23 @@
+.blockAdmin{
+    background-color: black;
+    color: white;
+    padding: 1%;
+    margin: 1px;
+    
+}
+.buttonAdmin {
+    color:black;
+    margin: 1%;
+    font-size: 100 px;
+    border-radius:50 px;
+    padding: 1.5%;
+}
+.imagenAd {
+    align-items: center;
+    width : 100px;
+    height: 100px;
+    border: solid;
+    background-color: gray;
+    margin: 1%;
+    padding: 1%;
+}

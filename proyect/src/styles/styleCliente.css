@@ -1,0 +1,79 @@
+.blockClientes {
+    background-color: gray;
+    padding: 1%;
+
+}
+.marco {
+    background-color: blue;
+}
+
+.buttonClientes {
+    color:white;
+    margin: 1%;
+    font-size: 100 px;
+    border-radius:50 px;
+    padding: 1.5%;
+    background-image: -webkit-linear-gradient(top, #eb94d0, #2079b0);
+  background-image: -moz-linear-gradient(top, #eb94d0, #2079b0);
+  background-image: -ms-linear-gradient(top, #eb94d0, #2079b0);
+  background-image: -o-linear-gradient(top, #eb94d0, #2079b0);
+  background-image: linear-gradient(to bottom, #eb94d0, #2079b0);
+    -webkit-border-radius: 28;
+  -moz-border-radius: 28;
+  border-radius: 28px;
+  
+}
+img {
+    width: 800vw;
+    height: 800vh;
+    margin: 1%;
+}
+
+.objetos {
+    margin-top: 10%;
+    font-size: 30px;
+}
+.imagenes {
+    align-items: center;
+    width : 100px;
+    height: 100px;
+    border: solid;
+    background-color: gray;
+    margin: 1%;
+    padding: 1%;
+}
+.producto {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 1px 10px 10px 2px rgb (0,0,0,0.2);
+    border: 6px solid transparent;
+    border-radius: 5px;
+}
+
+.button .btn {
+    background-color: #2079b0;
+    max-width: 150px;
+    width: 200%;
+    margin: 0 auto;
+    font-size: 1.5rem;
+    color: white;
+    font-weight: 600;
+
+
+}
+
+.productos{
+    padding: 5rem 2rem;
+    margin: 0 auto;
+    display: grid ;
+    grid-template-columns: repeat(auto-fit, minmax(22rem, 1fr) );
+    gap: 3rem 1rem;
+    box-sizing: border-box;
+    align-items: center;
+
+}
+.category{
+    padding: 1rem;
+    align-items: center;
+}

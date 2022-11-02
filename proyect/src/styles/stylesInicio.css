@@ -1,0 +1,34 @@
+body {
+    background-color: antiquewhite;
+    font-size: 25px;
+}
+.buttonInicio {
+    color:white;
+    margin: 7%;
+    font-size: 500 px;
+    padding: 2%;
+    background-image: -webkit-linear-gradient(top, #eb94d0, #2079b0);
+  background-image: -moz-linear-gradient(top, #eb94d0, #2079b0);
+  background-image: -ms-linear-gradient(top, #eb94d0, #2079b0);
+  background-image: -o-linear-gradient(top, #eb94d0, #2079b0);
+  background-image: linear-gradient(to bottom, #eb94d0, #2079b0);
+    -webkit-border-radius: 28;
+  -moz-border-radius: 28;
+  border-radius: 28px;
+  
+    
+}
+.buttonAdministrador{
+  color:white;
+  margin: 7%;
+  font-size: 500 px;
+  padding: 2%;
+  background-image: -webkit-linear-gradient(top, #eb94d0, #2079b0);
+background-image: -moz-linear-gradient(top, #eb94d0, #2079b0);
+background-image: -ms-linear-gradient(top, #eb94d0, #2079b0);
+background-image: -o-linear-gradient(top, #eb94d0, #2079b0);
+background-image: linear-gradient(to bottom, #eb94d0, #2079b0);
+  -webkit-border-radius: 28;
+-moz-border-radius: 28;
+border-radius: 28px;
+}
