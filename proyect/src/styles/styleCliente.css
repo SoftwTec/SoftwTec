@@ -7,6 +7,10 @@
     background-color: blue;
 }
 
+.altoH{
+    max-height: 380px;
+}
+
 .buttonClientes {
     color:white;
     margin: 1%;
@@ -22,11 +26,6 @@
   -moz-border-radius: 28;
   border-radius: 28px;
   
-}
-img {
-    width: 800vw;
-    height: 800vh;
-    margin: 1%;
 }
 
 .objetos {

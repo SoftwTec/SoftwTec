@@ -1,11 +1,7 @@
 import React, {useState} from "react";
 import "../styles/styleCliente.css";
 import Inicio from "./inicio";
-import imag1 from "../images/image1.jpg";
-import imag2 from "../images/image2.jpg";
-import imag3 from "../images/image3.jpg";
-
-
+import productos from '../productos.json';
 
 
 function Cliente (){
@@ -40,38 +36,25 @@ function Cliente (){
     let image = <img className="imagenes" src="https://th.bing.com/th/id/OIP.XDNV8BQJ6ZPVinmxj3Tx5gHaHa?pid=ImgDet" alt="Logo"></img>
     let lista = <div className="productos">
     
-    
-        <div className="producto">
-             <p>  <img  className="imagenes"  src= {imag1} alt="" ></img><br/>
-             <b>Audífonos In-Ear Inalámbricos  </b><br/>
-             $249900<br/>
-             Stock : 4 <br/>
-             <div className="button">
-        <button className="btn"> Comprar </button>
-        </div></p>
-        </div>
-    
-    <div className="producto">
-    <p>  <img  className="imagenes"  src= {imag2} alt="" ></img> <br/>
-    <b>Celular</b> <br/>
-     $1387900<br/>
-    Stock : 4 <br/>
-    <div className="button">
-        <button className="btn"> Comprar </button>
-    </div> </p>
-    </div>
-    
-    <div className="producto">
-    <p> <img  className="imagenes"  src= {imag3} alt="" ></img> <br/>
-    
-    <b>Microfono Inalámbrico</b>  <br/>
-     $378900<br/>
-    Stock :13 <br/>
-    <div className="button">
-        <button className="btn"> Comprar </button>
 
-    </div> </p>
-    </div>
+    <div className="row row-cols-1 row-cols-md-3 g-4">
+        {productos.map((producto, index) => (  
+          <div className="col-md-4 col-lg-3 mb-2" key={index}>
+            <div className="card">
+              <img className="card-img-top img-card altoH" alt="sol de espuma" src={require("../images/"+producto.imagen)} />
+              <div className="card-body">
+                <p className="card-text"><b>{producto.nombre}</b><br />
+                  ${producto.precio}<br />
+                  Stock: {producto.stock}<br/>
+                  <div className="button">
+                      <button className="btn"> Comprar </button>
+                  </div>
+                </p>
+              </div>
+            </div>
+          </div>
+        ))}  
+      </div>
     </div>
     
     let [barra, setBarra] =useState(init)
