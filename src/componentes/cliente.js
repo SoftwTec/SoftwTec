@@ -58,7 +58,7 @@ function Cliente (){
     </div>
     
     let [barra, setBarra] =useState(init)
-    let [inicio, setInicio] = useState (image)
+    let [inicio, setInicio] = useState ()
     let [visualizar, setVisualizar] = useState (lista)
     
     return (
