@@ -13,8 +13,7 @@ mongoose.connect(uri)
   .catch(e => console.log('error de conexión', e))
 
 app.get('/', (req, res) => {    
-    res.send ("Hola")
-    
+    res.send ("Bienvenido al backend")
 });
 
 app.post("/productos", async (req,res)=>{

@@ -1,6 +1,6 @@
 # Proyecto Mintic
 
-## Correr proyecto
+## Correr proyecto frontend 
 
 Para correr este proyecto se debe instalar las dependencias con:
 
