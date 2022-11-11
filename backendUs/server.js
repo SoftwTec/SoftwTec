@@ -36,7 +36,7 @@ app.get("/productos", async (req,res)=>{
 }
 })
 
-app.get ('/:id', async (req,res)=>{
+app.get ('/id', async (req,res)=>{
     const id = req.params.id;
     try {
         const unProducto = await product.findOne({ _id: id })
