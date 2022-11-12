@@ -92,7 +92,7 @@ app.delete('/delete', async (req, res) => {
             res.send("Not found");
         }
         else {
-            res.send("product delete");
+            res.send("product delete")
         }
         
     } catch (error) {
