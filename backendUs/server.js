@@ -51,7 +51,7 @@ app.get("/productos/:productoId/:nuevoStock", async (req, res) => {
     res.json(producto);
 })
 
-// listar todos los productos
+// Consultar todos los productos
 app.get("/productos", async (req, res) => {
     try {
         const lista = await product.find()
@@ -71,11 +71,30 @@ app.get("/disponibles", async (req, res) => {
     }
 })
 
-app.get('/id', async (req, res) => {
-    const id = req.params.id;
+//Consultar por id
+app.get('/productos/:id', async (req, res) => {
+    let id = req.params._id;
     try {
-        const unProducto = await product.findOne({ _id: id })
+        const unProducto = await product.findOne({ _id: id });
         res.send(unProducto);
+    } catch (error) {
+        console.log('error', error)
+    }
+})
+
+//Eliminar producto
+app.delete('/delete', async (req, res) => {
+    const deleteProduct = req.params.id;
+    try {
+        const deleteProducto = await product.findByIdAndDelete (deleteProduct)
+
+        if(!deleteProducto){
+            res.send("Not found");
+        }
+        else {
+            res.send("product delete");
+        }
+        
     } catch (error) {
         console.log('error', error)
     }
