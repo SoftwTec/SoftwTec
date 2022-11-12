@@ -73,7 +73,7 @@ app.get("/disponibles", async (req, res) => {
 
 //Consultar por id
 app.get('/productos/:id', async (req, res) => {
-    let id = req.params._id;
+    let id = req.params.id;
     try {
         const unProducto = await product.findOne({ _id: id });
         res.send(unProducto);
